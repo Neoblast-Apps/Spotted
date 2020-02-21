@@ -84,7 +84,7 @@ export class FilterComponent implements OnInit {
     Filteri:"Filteri",
     Po_drzavi:"Po državi",
     Po_gradovima:"Po gradovima",
-    Promjeni_filter:"Promjeni filter",
+    Promjeni_filter:"Primjeni filter",
     Kamera:"Kamera",
     Galerija:"Galerija",
     Izaberi_drzavu:"Izaberi državu",

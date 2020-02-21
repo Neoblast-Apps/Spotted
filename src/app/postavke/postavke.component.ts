@@ -79,7 +79,7 @@ export class PostavkeComponent implements OnInit {
       procitaj_pravila:"Pročitaj ponovo pravila korištenja naše aplikacije. Možete ih pročitati ovdje, ali i na našoj web stranici.",
       Procitaj:"Pročitaj",
       Verzija_aplikacije:"Verzija aplikacije",
-      trenutna_apk : "Trenutna instalriana verzija je 2.0.5. Provjerite da li postoji ažuriranje",
+      trenutna_apk : "Trenutna instalriana verzija je 2.0.6. Provjerite da li postoji ažuriranje",
       Provjeri:"Provjeri",
 
     }
@@ -107,7 +107,7 @@ export class PostavkeComponent implements OnInit {
       procitaj_pravila:"Прочитај поново правила кориштења наше апликације. Можете их прочитати овђе, али и на нашој њеб страници.",
       Procitaj:"Прочитај",
       Verzija_aplikacije:"Верзија апликације",
-      trenutna_apk: "Тренутна инсталриана верзија је 2.0.5. Провјерите да ли постоји ажурирање",
+      trenutna_apk: "Тренутна инсталриана верзија је 2.0.6. Провјерите да ли постоји ажурирање",
       Provjeri:"Провери",
     }
 

@@ -51,7 +51,7 @@ export class HomePage {
 
 
 
-  version:string = "2.0.5"
+  version:string = "2.0.6"
   Posts = []
   brojacPostova = 0
   imageURI:any
@@ -603,7 +603,7 @@ export class HomePage {
         .subscribe((data : any) =>{
           let answer = data.text()
           console.log(answer)
-          if(answer === "NewVersion"){
+          if(!answer.includes("Updated")){
             this.AlertNeedUpdate()
           }
 
@@ -1390,6 +1390,7 @@ export class HomePage {
 
   openGallery(){
     let cameraOptions:CameraOptions = {
+      allowEdit: true,
       sourceType: this.camera.PictureSourceType.PHOTOLIBRARY,
       destinationType: this.camera.DestinationType.DATA_URL,      
       quality: 100,
@@ -2330,7 +2331,7 @@ alertClass = ""
 async AlertAllOk() {
   const alert = await this.alertController.create({
     cssClass: this.alertClass,
-    message: '<h5 class='+ this.alertMessageH5 +'>Potvrdi!</h5><br/><p class='+ this.alertMessageP +'>Potvrdite za objavljivanje. Pritiskom tipke Objavi biti će Vam prikazana jedna reklama te nakon nje će se izvršiti objava.</p>',
+    message: '<h5 class='+ this.alertMessageH5 +'>Potvrdi!</h5><br/><p class='+ this.alertMessageP +'>Potvrdite za objavljivanje. Pritiskom tipke Potvrdi biti će Vam prikazana jedna reklama te nakon nje će se izvršiti objava.</p>',
     buttons: [
       {
         text: 'Prekid',
@@ -2339,7 +2340,7 @@ async AlertAllOk() {
           //prekid posta
         }
       }, {
-        text: 'Objavi',
+        text: 'Potvrdi',
         handler: () => {
           this.Loader(1000)
           this.GetAvailableId()

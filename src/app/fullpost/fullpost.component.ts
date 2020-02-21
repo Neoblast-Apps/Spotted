@@ -38,7 +38,7 @@ export class FullpostComponent implements OnInit {
 
   ) {
     //this.user.setfullId("63828233")
-    //this.user.setNadimak("tulipan")
+    //this.user.setNadimak("tulipan")//
 
     if(this.user.getUI() === "1"){
       this.alertMessageH5 = "h6_class"
